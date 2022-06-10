@@ -14,3 +14,11 @@ def decode_char(char)
   $morseCodes[char]
 end
 
+# decode a word
+def decode_word(word)
+  wordDecoded = ''
+  word.split.each do |letter|
+    wordDecoded += decode_char(letter)
+  end
+  wordDecoded
+end
