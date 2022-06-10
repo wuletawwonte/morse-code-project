@@ -31,3 +31,7 @@ def decode_message(message)
   end
   messageDecoded
 end
+
+puts 'Enter a message to decode!'
+getMessage = gets.chomp
+puts decode(getMessage)
