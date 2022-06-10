@@ -22,3 +22,12 @@ def decode_word(word)
   end
   wordDecoded
 end
+
+# decode the entire message
+def decode_message(message)
+  messageDecoded = ''
+  message.split('  ').each do |messages|
+    messageDecoded += "#{decode_word(messages)} "
+  end
+  messageDecoded
+end
