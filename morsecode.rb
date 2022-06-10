@@ -34,4 +34,4 @@ end
 
 puts 'Enter a message to decode!'
 getMessage = gets.chomp
-puts decode(getMessage)
+puts decode_message(getMessage)
